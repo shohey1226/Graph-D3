@@ -1,0 +1,6 @@
+/Graph-D3-*
+/.build
+/_build*
+/Build
+MYMETA.*
+!META.json
