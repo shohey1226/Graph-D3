@@ -6,8 +6,6 @@ Graph::D3 - Create ref/json to show node-edge graph with D3.js
 
     use Graph;
     use Graph::D3;
-    
-
     my $g = new Graph(
         vertices => [qw/1 2 3 4 5/], 
         edges => [[qw/1 2/], [qw/2 3/], [qw/3 5/], [qw/4 1/]] 
@@ -16,9 +14,6 @@ Graph::D3 - Create ref/json to show node-edge graph with D3.js
     $output = $d3->force_directed_graph(); #output is hash reference
     $d3 = new Graph::D3(graph => $g, type => json); 
     $json = $d3->force_directed_graph(); # output is json format
-    
-
-
 
 # DESCRIPTION
 
@@ -31,8 +26,7 @@ This module simply supports node-edge graph in the example.
 
 This outputs the format which is used for Force Directed Graph described below.
 
-https://gist.github.com/mbostock/4062045
-http://bl.ocks.org/mbostock/4062045
+https://gist.github.com/mbostock/4062045,http://bl.ocks.org/mbostock/4062045
 
 The graph should be directed grpah.
 Node in Graph can have group attribute (Default is all 1) to have different node color.
