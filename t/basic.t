@@ -17,13 +17,20 @@ my $g = new Graph(
 my $d3 = new Graph::D3(graph => $g);
 is($d3->type, 'ref', 'type ok');
 my $output = $d3->force_directed_graph();
-is(scalar @{$output->{nodes}}, 5, 'number of node is ok');
-is(scalar @{$output->{links}}, 4, 'number of link is ok');
+is(scalar @{$output->{nodes}}, 5, 'number of node is ok - force directed graph');
+is(scalar @{$output->{links}}, 4, 'number of link is ok - force directed graph');
+
+$output = $d3->hierarchical_edge_bundling();
+is(scalar @{$output}, 5, 'number of node is ok - hierarchical edge bundling ');
 
 $d3 = new Graph::D3(graph => $g, type => 'json');
 my $json = $d3->force_directed_graph();
 $output =  decode_json $json;
-is(scalar @{$output->{nodes}}, 5, 'number of node in json is ok');
-is(scalar @{$output->{links}}, 4, 'number of link in json is ok');
+is(scalar @{$output->{nodes}}, 5, 'number of node in json is ok - force directed graph');
+is(scalar @{$output->{links}}, 4, 'number of link in json is ok - force directed graph');
+
+$json = $d3->hierarchical_edge_bundling();
+$output = decode_json $json;
+is(scalar @{$output}, 5, 'number of node in josn is ok - hierarchical edge bundling ');
 
 done_testing;
