@@ -84,7 +84,7 @@ Graph::D3 - Create ref/json to show node-edge graph with D3.js
 
 =head1 DESCRIPTION
 
-Graph::D3 is a moudle to covert Graph object to the format which is used in d3.js(http://d3js.org/).
+Graph::D3 is a module to covert Graph object to the format which is used in d3.js(http://d3js.org/).
 This module simply supports node-edge graph in the example.
 
 =head1 METHODS
