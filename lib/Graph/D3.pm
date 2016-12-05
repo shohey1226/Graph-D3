@@ -93,7 +93,7 @@ This module simply supports node-edge graph in the example.
 
 This outputs the format which is used for Force Directed Graph described below.
 
-https://gist.github.com/mbostock/4062045,http://bl.ocks.org/mbostock/4062045
+L<https://gist.github.com/mbostock/4062045>, L<http://bl.ocks.org/mbostock/4062045>
 
 The input graph should be directed grpah.
 Node in Graph can have 'group' attribute (Default is all 1) to have different node color.
@@ -101,7 +101,7 @@ Also Edge in Graph can have 'value' attribe(defalut is all 1).
 
 =head2 hierarchical_edge_bundling 
 
-http://mbostock.github.io/d3/talk/20111116/bundle.html
+L<http://mbostock.github.io/d3/talk/20111116/bundle.html>
 
 The input graph shoudl be directed graph.
 Node in Graph can have 'size' attribute (Default is all 1). 
