@@ -20,7 +20,7 @@ Graph::D3 - Create ref/json to show node-edge graph with D3.js
 
 # DESCRIPTION
 
-Graph::D3 is a moudle to covert Graph object to the format which is used in d3.js(http://d3js.org/).
+Graph::D3 is a module to convert Graph object to the format which is used in d3.js(http://d3js.org/).
 This module simply supports node-edge graph in the example.
 
 # METHODS
@@ -33,13 +33,13 @@ https://gist.github.com/mbostock/4062045,http://bl.ocks.org/mbostock/4062045
 
 The input graph should be directed grpah.
 Node in Graph can have 'group' attribute (Default is all 1) to have different node color.
-Also Edge in Graph can have 'value' attribe(defalut is all 1).
+Also Edge in Graph can have 'value' attribute (default is all 1).
 
 ## hierarchical\_edge\_bundling 
 
 http://mbostock.github.io/d3/talk/20111116/bundle.html
 
-The input graph shoudl be directed graph.
+The input graph should be directed graph.
 Node in Graph can have 'size' attribute (Default is all 1). 
 
 # AUTHOR
